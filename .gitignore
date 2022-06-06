@@ -1,0 +1,4 @@
+rabbitmq-data/*
+venv/*
+
+

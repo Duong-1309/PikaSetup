@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  rabbitmq_pika:
+    container_name: rabbitmq-data_pika
+    image: rabbitmq:3.8-management-alpine
+    environment:
+      # - RABBITMQ_DEFAULT_USER=admin
+      # - RABBITMQ_DEFAULT_PASS=admin
+      - TZ=Asia/Ho_Chi_Minh
+    volumes:
+      - "./rabbitmq-data:/var/lib/rabbitmq"
+      # - "./configs/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf"
+    ports:
+      #AMQP protocol port
+      - '5672:5672'
+      #HTTP Management UI
+      - '15672:15672'
+    # restart: on-failure

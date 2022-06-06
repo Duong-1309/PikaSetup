@@ -1,0 +1,8 @@
+anyio==3.6.1
+fastapi==0.78.0
+idna==3.3
+pika==1.2.1
+pydantic==1.9.0
+sniffio==1.2.0
+starlette==0.19.1
+typing-extensions==4.2.0
